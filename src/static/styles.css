@@ -87,14 +87,35 @@ section h3 {
 
 .activity-card ul {
   margin: 0;
-  padding-left: 20px;
-  list-style-type: disc;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .activity-card li {
   margin-bottom: 6px;
   color: #555;
   line-height: 1.4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 18px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  margin-left: 8px;
+}
+
+.delete-icon:hover {
+  background-color: #ffebee;
 }
 
 .no-participants {
